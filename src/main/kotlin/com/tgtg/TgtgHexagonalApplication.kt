@@ -1,11 +1,13 @@
 package com.tgtg
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan
 import org.springframework.boot.runApplication
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
 @SpringBootApplication
+@ConfigurationPropertiesScan
 @RestController //rest APi 하기 위한 어노테이션
 class TgtgHexagonalApplication {
     
