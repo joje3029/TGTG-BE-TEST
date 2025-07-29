@@ -1,0 +1,19 @@
+root = true
+
+[*.{kt,kts}]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 120
+end_of_line = lf
+charset = utf-8
+
+disabled_rules = no-wildcard-imports
+ij_kotlin_disable_unused_imports = true
+ij_kotlin_disable_unused_parameters = true
+ij_kotlin_disable_unnecessary_parentheses = true
+ij_kotlin_disable_unnecessary_semicolons = true
+ij_kotlin_disable_unnecessary_variable = true
+ij_kotlin_disable_unnecessary_string_template = true
+ij_kotlin_disable_unnecessary_call = true

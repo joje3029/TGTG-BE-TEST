@@ -1,0 +1,21 @@
+build:
+  maxIssues: 0
+  excludeCorrectable: false
+
+config:
+  validation: true
+
+processors:
+  active: true
+
+console-reports:
+  active: true
+  exclude:
+    - 'Detekt'
+
+output-reports:
+  active: true
+  exclude:
+    - 'HtmlReport'
+    - 'TxtReport'
+    - 'XmlReport'

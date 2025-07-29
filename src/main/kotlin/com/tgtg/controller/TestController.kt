@@ -10,7 +10,10 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @RequestMapping("/api/v1")
 class TestController {
-    
+
+    // 사용하지 않는 변수 선언 (Detekt UnusedPrivateMember 감지)
+    private val unusedVariable = "some value"
+
     @PostMapping("/test")
     fun test(@RequestBody request: TestRequest): TestResponse {
         return TestResponse(
@@ -19,4 +22,4 @@ class TestController {
             password = request.password
         )
     }
-} 
+}
